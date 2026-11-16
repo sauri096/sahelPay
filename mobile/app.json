@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "SahelPay",
+    "slug": "sahelpay",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sahelpay.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.sahelpay.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SahelPay utilise la caméra pour scanner les QR codes de paiement."
+        }
+      ]
+    ],
+    "scheme": "sahelpay"
+  }
+}
